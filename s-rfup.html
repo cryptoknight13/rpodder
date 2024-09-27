@@ -1,0 +1,75 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>BIOS and Firmware Security</h1>
+    <p></p>
+  </header> -->
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakesh Podder - Researcher in Cybersecurity, AI & ML</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <h1>Rakesh Podder</h1>
+      <p>Researcher in Cybersecurity, Firmware Security, AI, and Machine Learning.<a href="https://scholar.google.com/citations?user=LznkBwUAAAAJ&hl=en" target="_blank">[Google Scholar]</a> </p>
+  
+      <!-- Navigation links wrapped in a box -->
+      <nav class="nav-box">
+        <ul class="tabs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="research.html" class="active">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <!-- Navigation Buttons -->
+  <nav class="research-nav">
+    <a href="bios-firmware-security.html" class="btn">Previous</a>
+    <a href="ai-planning.html" class="btn">Next</a>
+  </nav>
+
+  <section>
+    <div class="research-detail">
+        <h2>S-RFUP: Secure Remote Firmware Update Protocol</h2>
+        <p>We present a novel framework (S-RFUP) that integrates industry standard protocols (PLDM, MCTP) with a hardware root of trust (HRoT) to ensure interoperable and secure RFU across multiple device platforms.</p>
+        
+        <!-- Image Gallery -->
+        <div class="research-gallery">
+            <img src="images/highlevel.png" alt="Secure Remote Firmware Update Protocol">
+            <img src="images/sequence.png" alt="Firmware update Process">
+            <img src="images/lib.png" alt="Desiged Libraries">
+            <img src="images/state.png" alt="States of S-RFUP">
+        </div>
+        <p>Traditional over-the-air (OTA) update mechanisms lack security features. As a result, OTA firmware updates expose a device to several threats including unauthorized update, introduction of malware in the firmware code and rollback of firmware to an vulnerable older version. A handful of domain specific OTA firmware update protocols, especially in the automotive sector, have started incorporating rudimentary security features; however, these are not always enough. Moreover, a lack of standardization can lead to compatibility issues. In this work, we introduce the Secure Remote Firmware Update Protocol (S-RFUP) for platform ( We use the term ``platform'' to mean any computer or hardware device and/or associated operating system, or a virtual environment on which software can be installed and run. Source NISTIR 7698, \url{https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir7698.pdf}) firmware updates that enhances security and operational integrity across firmware devices during the update procedure. We build upon the hardware root of trust functionality provided by the Project Cerberus to perform secure attestation. With a goal of providing uniformity across a multitude of platforms, we leverage industry standards such as Platform Level Data Model (PLDM), Management Component Transport Protocol (MCTP), and well established cryptographic algorithms. Incorporating PLDM and MCTP reduces the management complexity and ensure interoperability between different hardware and software components in platform. We provide a security analysis of the proposed S-RFUP framework and discuss its implementation, testing and validation results. </p>
+    </div>
+  </section>
+
+  <!-- Navigation Buttons at the Bottom as well -->
+  <nav class="research-nav">
+    <a href="bios-firmware-security.html" class="btn">Previous</a>
+    <a href="ai-planning.html" class="btn">Next</a>
+  </nav>
+</section>
+<footer>
+    <p>&copy; 2024 Rakesh Podder</p>
+</footer>
+</body>
+</html>

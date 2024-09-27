@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>BIOS and Firmware Security</h1>
+    <p></p>
+  </header> -->
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakesh Podder - Researcher in Cybersecurity, AI & ML</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <h1>Rakesh Podder</h1>
+      <p>Researcher in Cybersecurity, Firmware Security, AI, and Machine Learning.<a href="https://scholar.google.com/citations?user=LznkBwUAAAAJ&hl=en" target="_blank">[Google Scholar]</a> </p>
+  
+      <!-- Navigation links wrapped in a box -->
+      <nav class="nav-box">
+        <ul class="tabs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="research.html" class="active">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <!-- Navigation Buttons -->
+  <nav class="research-nav">
+    <!-- <a href="ai-planning.html" class="btn">Previous</a> -->
+    <a href="s-rfup.html" class="btn">Next</a>
+  </nav>
+
+  <section>
+    <div class="research-detail">
+        <h2>BIOS and Firmware Security</h2>
+        <p>Exploring secure boot mechanisms, trusted hardware, and device protection in transit.</p>
+        
+        <!-- Image Gallery -->
+        <div class="research-gallery">
+            <img src="images/boot.png" alt="Secure Boot Process">
+            <img src="images/lock.png" alt="Device Locking">
+            <img src="images/unlock.png" alt="Trusted Agent Network">
+        </div>
+        <p>Modern hardware devices are complex systems. There is a complex supply chain involved in their manufacturing process that consists of a set of upstream component originators that are transferred to a set of downstream component users to produce more complex sub-devices and assembled by the final vendor. As a hardware device moves in this supply chain, there is a potential threat of tampering. This is of significant concern since there is an increased emphasis on using trusted hardware devices to provide security services. Even if the software is trusted and bug-free, if it is run on an untrusted device, not many security guarantees can be expected from it. The project assumes that the manufacturer of a product is trusted not to have tampered with the product before sending it downstream. Thus, the protection in transit problem is reduced to the problem of ensuring that the first-time use of a product after it has left the vendor is only by the rightful/authorized immediate downstream user. This is achieved by having the manufacturer of the product lock it down after production and introducing a mechanism by which the product can authenticate the rightful user and self-unlock to allow the use of the product. For a proof-of-concept, we are investigating the problem in the context of a complex product such as a workstation or laptop being shipped to a human end user. We are using hardware trusted root of trust to perform authentication, locking, and unlocking of devices. The locking of the device is performed at the BIOS/BMC level by the vendor. Authentication is based on sharing secrets. We use a mesh of trusted agents for the secure sharing of secrets.</p>
+    </div>
+  </section>
+
+  <!-- Navigation Buttons at the Bottom as well -->
+  <nav class="research-nav">
+    <!-- <a href="ai-planning.html" class="btn">Previous</a> -->
+    <a href="s-rfup.html" class="btn">Next</a>
+  </nav>
+</section>
+<footer>
+    <p>&copy; 2024 Rakesh Podder</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>BIOS and Firmware Security</h1>
+    <p></p>
+  </header> -->
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakesh Podder - Researcher in Cybersecurity, AI & ML</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <h1>Rakesh Podder</h1>
+      <p>Researcher in Cybersecurity, Firmware Security, AI, and Machine Learning.<a href="https://scholar.google.com/citations?user=LznkBwUAAAAJ&hl=en" target="_blank">[Google Scholar]</a> </p>
+  
+      <!-- Navigation links wrapped in a box -->
+      <nav class="nav-box">
+        <ul class="tabs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="research.html" class="active">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <!-- Navigation Buttons -->
+  <nav class="research-nav">
+    <a href="machine-learning.html" class="btn">Previous</a>
+    <a href="resiliency-graphs.html" class="btn">Next</a>
+  </nav>
+
+  <section>
+    <div class="research-detail">
+        <h2>Formal Method</h2>
+        <p>Enhancing the Protection in Transit (PIT) protocol—which locks devices during transit to prevent unauthorized firmware tampering—we formally verify its correctness and security using Coloured Petri Nets and the STRIDE threat modeling framework, and implement robust cryptographic techniques tested on a trusted microcontroller to ensure only authorized users can initiate the boot process.</p>
+
+        <p>The correctness ( formal verification) of the PIT security protocol is verified using Coloured-Petri Nets (CPN). We use a threat modeling framework, STRIDE to demonstrate various cyber-attacks through the CPN.</p>
+        
+        <!-- Image Gallery -->
+        <div class="research-gallery">
+            <img src="images/method.png" alt="method">
+            <img src="images/model.png" alt="Locking in CPN">
+            <img src="images/model2.png" alt="Unlocking in CPN">
+            <img src="images/threats.png" alt="CPN Attacks">
+        </div>
+        <p>Firmware like the Basic Input Output System (BIOS) is essential for a computing device's operation, as it facilitates communication between the hardware and the operating system. However, firmware is vulnerable to unauthorized and malicious modifications, which are particularly serious because they allow attackers to gain full control over the entire computing system, effectively bypassing all security measures of the operating system and higher layers. Although there are industry protocols to secure the boot process, firmware remains easy to tamper with once the device is running. This issue is especially critical when devices are transported, as they can be intercepted and booted by malicious actors. To mitigate this threat, we have developed the Protection in Transit (PIT) protocol, which locks the device during transit and ensures that only authorized users can boot it up. Given the crucial role of the PIT protocol in device security, it is imperative to provide formal guarantees of its correctness and security. This paper enhances the PIT protocol in two significant ways. First, we validate its correctness using Coloured Petri Nets (CPN) and demonstrate its robustness against potential cyberattacks through Microsoft's STRIDE threat modeling framework. We then incorporate the findings from the STRIDE analysis into the CPN model to assess the PIT protocol's security, thereby increasing confidence in its ability to protect devices during transit. Second, we delve into the core functionalities of the PIT protocol by developing implementation libraries that utilize robust cryptographic techniques. These techniques have been rigorously tested on a trusted microcontroller.</p>
+    </div>
+  </section>
+
+  <!-- Navigation Buttons at the Bottom as well -->
+  <nav class="research-nav">
+    <a href="machine-learning.html" class="btn">Previous</a>
+    <a href="resiliency-graphs.html" class="btn">Next</a>
+  </nav>
+  <footer>
+    <p>&copy; 2024 Rakesh Podder</p>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
