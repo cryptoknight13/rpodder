@@ -1,0 +1,78 @@
+/* Timeline Section */            /*Education Section*/   
+#education {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0; /* Remove padding for simplicity */
+    text-align: center;
+    color: #333;
+  }
+  
+  #education h2 {
+    font-family: 'Tangerine', cursive;
+    font-size: 70px;
+    margin-bottom: 30px;
+    color: #474544;
+    text-shadow: 4px 4px 6px rgba(14, 147, 219, 0.2);
+  }
+  
+  /* Timeline Structure */
+  .timeline {
+    position: relative;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spread items across the row */
+    margin-bottom: 40px;
+  }
+  
+  .timeline-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+  
+  .timeline-icon img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Make icons circular */
+  }
+  
+  .timeline-content {
+    text-align: left;
+    flex-grow: 1; /* Take up available space */
+  }
+  
+  .timeline-content h3 {
+    font-size: 22px;
+    margin: 0;
+    color: #0c0c0c;
+  }
+  
+  .timeline-content p {
+    margin: 5px 0;
+    color: #0c0c0c;
+  }
+  
+  .timeline-date {
+    display: block;
+    font-size: 14px;
+    color: #0c0c0c;
+    margin-bottom: 10px;
+  }
+  
+  /* School Logo */
+  .school-logo {
+    width: 70px;
+    height: auto;
+    margin-left: 20px; /* Add some spacing between the content and logo */
+  }
+  
+  .school-logo:hover {
+    transform: scale(3.1); /* Enlarge on hover */
+    transition: 0.3s ease-in-out;
+  }

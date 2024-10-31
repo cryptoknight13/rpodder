@@ -7,55 +7,80 @@
   <link rel="stylesheet" href="styles.css">
   <!-- Font Awesome CDN for social media icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Pirata+One&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Oleo+Script:wght@400;700&family=Pirata+One&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chokokutai&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Oleo+Script:wght@400;700&family=Pirata+One&family=Poppins:wght@400;500;600&family=Rochester&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chokokutai&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Oleo+Script:wght@400;700&family=Pirata+One&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:wght@400;500;600&family=Rochester&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>Rakesh Podder</h1>
-    <p>Researcher in Cybersecurity, Firmware Security, AI, and Machine Learning.<a href="https://scholar.google.com/citations?user=LznkBwUAAAAJ&hl=en" target="_blank">[Google Scholar]</a> </p>
-
-    <!-- Navigation links wrapped in a box -->
-    <nav class="nav-box">
-      <ul class="tabs">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <p>Researcher in Cybersecurity, Firmware Security, AI, and Machine Learning. <a href="https://scholar.google.com/citations?user=LznkBwUAAAAJ&hl=en" target="_blank" class="custom-link">[Google Scholar]</a></p>
   </header>
+  
+  <!-- Full-width navigation bar below header -->
+  <nav class="full-width-nav">
+    <ul class="tabs">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
   
   <section id="about">
     <h2>About Me</h2>
     <!-- Add your profile picture -->
     <img src="images/IMG_3696.JPG" alt="Rakesh Podder" class="profile-picture">
-    <p>I have received the B.Tech. degree in Electrical Engineering from the Indian Institute of Technology (IIT), Patna, India, in 2017, and the M.E. degree in Control System and Robotics from Jadavpur University (JU), Kolkata, India, in 2020. I am currently pursuing the Ph.D. degree in Computer Science at Colorado State University (CSU), Fort Collins, CO, USA. My research interests include cybersecurity, firmware security, AI planning, and machine learning. I have contributed to the development of secure frameworks like the Hardware Root of Trust (HRoT) and has actively participated in projects such as Microsoft Project Cerberus. I have published in various international conferences and journals, and he received the Best Paper Award at the IEEE QRS 2024 Conference. I am also a member of IEEE.</p>
+    <p class="large-quote"> 
+      I have received the B.Tech. degree in Electrical Engineering from the Indian Institute of Technology (IIT), Patna, India, in 2017, and the M.E. degree in Control System and Robotics from Jadavpur University (JU), Kolkata, India, in 2020. I am currently pursuing the Ph.D. degree in Computer Science at Colorado State University (CSU), Fort Collins, CO, USA. My research interests include cybersecurity, firmware security, AI planning, and machine learning. I have contributed to the development of secure frameworks like the Hardware Root of Trust (HRoT) and has actively participated in projects such as Microsoft Project Cerberus. I have published in various international conferences and journals, and he received the Best Paper Awards at the IEEE QRS 2024 and IEEE TPS 2024 Conference. I am also a member of IEEE.</p>
   </section>
 
  <!-- Achievements Section -->
  <section id="achievements">
-  <h2>Achievements</h2>
-  <div class="achievement">
-    <img src="images/IMG_3697.JPG" alt="Best Paper Award" class="achievement-img">
-    <div class="achievement-content">
-      <h3>Best Paper Award - IEEE QRS 2024</h3>
-      <p>Awarded the Best Paper Award at the IEEE QRS 2024 conference for my research on firmware security.<a href="https://ieeexplore.ieee.org/abstract/document/10684660" target="_blank">Paper Link</a></p>
+  <div class="achievements-container">
+    <h2>Achievements</h2>
+    <div class="achievement">
+      <img src="images/IMG_6324.jpeg" alt="Best Paper Award" class="achievement-img">
+      <div class="achievement-content">
+        <h3>Best Paper Award - IEEE TPS 2024</h3>
+        <p>Awarded the ''Best Paper Award'' at the IEEE TPS 2024 conference for my research on Resiliency Graphs: Modelling the Interplay between
+          Cyber Attacks and System Failures through AI
+          Planning. <a href="" target="_blank">Paper Link</a></p>
+      </div>
     </div>
-  </div>
-
-  <!-- Add more achievements if necessary -->
-  <div class="achievement">
-    <img src="images/cerberus.jpg" alt="Achievement 2" class="achievement-img">
-    <div class="achievement-content">
-      <h3>Protection in Transit (PIT) Open-sourced</h3>
-      <p>Open-sourced "pit" libraries to <a href="https://github.com/Azure/Project-Cerberus/pulls" target="_blank">Microsoft Project Cerberus</a>, becoming a key contributor among 20+ contributors.</p>
+    <div class="achievement">
+      <img src="images/IMG_3697.JPG" alt="Best Paper Award" class="achievement-img">
+      <div class="achievement-content">
+        <h3>Best Paper Award - IEEE QRS 2024</h3>
+        <p>Awarded the ''Best Paper Award'' at the IEEE QRS 2024 conference for my research on ''The PIT-Cerberus Framework: Preventing Device Tampering During Transit'''. <a href="https://ieeexplore.ieee.org/abstract/document/10684660" target="_blank">Paper Link</a></p>
+      </div>
+    </div>
+    <div class="achievement">
+      <img src="images/cerberus.jpg" alt="Achievement 2" class="achievement-img">
+      <div class="achievement-content">
+        <h3>Protection in Transit (PIT) Open-sourced</h3>
+        <p>Open-sourced "pit" libraries to <a href="https://github.com/Azure/Project-Cerberus/pulls" target="_blank">Microsoft Project Cerberus</a>, becoming a key contributor among 20+ contributors.</p>
+      </div>
     </div>
   </div>
 </section>
 
+
 <section id="experience">
-    <h2>Job Experience</h2>
+    <h2>Job Experiences</h2>
     <div class="timeline">
         <!-- Job 1 -->
         <div class="timeline-item">
@@ -109,7 +134,7 @@
 
   <!-- Social Media Section -->
   <section id="social-media">
-    <h3>Connect with me</h3>
+    <h3>Connect with Me</h3>
     <div class="social-icons">
       <a href="https://www.linkedin.com/in/rakesh-podder-09181b7b/" class="fa fa-linkedin"></a>
       <a href="https://github.com/cryptoknight13" class="fa fa-github"></a>

@@ -1,0 +1,128 @@
+/* Events Section with Subtle Gradient Background */
+#events, #previous-events {
+    width: 100%;
+    background: linear-gradient(135deg, #f9f9f9, #ffffff);
+    padding: 60px 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  }
+  
+  #events h2, #previous-events h2 {
+    font-family: 'Tangerine', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: #0056b3;
+    margin-bottom: 50px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Event List */
+  .event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  /* Colorful Event Item with Border and Hover Effect */
+  .event-item {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Assign different background colors to each event item */
+  .event-item:nth-child(odd) {
+    background: #ffe0b2; /* Light Orange */
+  }
+  
+  .event-item:nth-child(even) {
+    background: #b3e5fc; /* Light Blue */
+  }
+  
+  .event-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Styled Date with Circular Badge */
+  .event-date {
+    min-width: 80px;
+    min-height: 80px;
+    margin-right: 20px;
+    background: #ff6f61; /* A vibrant red/orange */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50%; /* Circular shape */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+  
+  /* Event Content Styling */
+  .event-content {
+    flex-grow: 1;
+  }
+  
+  .event-content h3 {
+    font-family: "Pacifico", cursive;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .event-content p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Event Moments Gallery */
+  #event-moments {
+    width: 100%;
+    background: #ffffff;
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  #event-moments h2 {
+    font-family: 'Tangerine', cursive;
+    font-size: 50px;
+    color: #0056b3;
+    margin-bottom: 40px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Moments Gallery Styling */
+  .moments-gallery {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Moment Image with Zoom Hover */
+  .moment-img {
+    width: 240px;
+    height: 240px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .moment-img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  

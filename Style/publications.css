@@ -1,0 +1,117 @@
+/* Publications Section */
+#publications {
+    width: 100%;
+    background: linear-gradient(135deg, #e9f5fb, #ffffff); /* Subtle background gradient */
+    padding: 60px 0;
+  }
+  
+  #publications h2 {
+    font-family: 'Tangerine', cursive;
+    font-size: 70px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #333;
+    text-shadow: 4px 4px 6px rgba(14, 147, 219, 0.2);
+    letter-spacing: 1px;
+  }
+  
+  /* Publication Card */
+  .publication {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding: 20px 30px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Hover effect for scale and shadow */
+  .publication:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Decorative border on hover */
+  .publication::before, .publication::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 0;
+    background-color: #0056b3;
+    transition: height 0.3s ease;
+  }
+  
+  .publication::before {
+    top: 0;
+    left: 0;
+  }
+  
+  .publication::after {
+    bottom: 0;
+    right: 0;
+  }
+  
+  .publication:hover::before, .publication:hover::after {
+    height: 100%;
+  }
+  
+  /* Publication info styling */
+  .pub-info {
+    flex-grow: 1;
+  }
+  
+  .pub-info h3 {
+    font-family: "Pacifico", cursive;
+    font-size: 30px;
+    margin: 0;
+    color: #06294f;
+    text-transform: capitalize;
+    position: relative;
+  }
+  
+  .pub-info h3 a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .pub-info p {
+    margin: 10px 0;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Button container */
+  .pub-actions {
+    display: flex;
+    gap: 15px;
+  }
+  
+  /* Stylish Button */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    background: linear-gradient(135deg, #a2c5eb, #003e88);
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .btn:hover {
+    background: linear-gradient(135deg, #863b08, #b37100);
+    transform: translateY(-3px);
+  }
+  
+  .btn i {
+    margin-right: 5px;
+    font-size: 1.2em;
+  }
+  

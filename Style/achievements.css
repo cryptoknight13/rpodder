@@ -1,0 +1,110 @@
+/* Full-width achievements section with gradient background */
+#achievements {
+    width: 100%;
+    background: linear-gradient(135deg, #e3f2fd, #f9f9f9); /* Light blue to white gradient */
+    padding: 60px 0;
+  }
+  
+  /* Centered container for achievements */
+  .achievements-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Section title styling */
+  #achievements h2 {
+    font-family: 'Tangerine', cursive;
+    font-size: 70px;
+    color: #0056b3;
+    margin-bottom: 50px;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+  }
+  
+  /* Individual achievement styling with hover effect */
+  .achievement {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Hover effect for scale and shadow */
+  .achievement:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Decorative icon */
+  .achievement-icon {
+    font-size: 36px;
+    color: #0056b3;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Decorative icon color change on hover */
+  .achievement:hover .achievement-icon {
+    color: #ff9800;
+  }
+  
+  .achievement-img {
+    width: 350px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .achievement-content {
+    flex-grow: 1;
+  }
+  
+  .achievement-content h3 {
+    font-family: "Playwrite GB S", serif;
+    font-size: 24px;
+    color: #0056b3;
+    margin: 0;
+    position: relative;
+  }
+  
+  .achievement-content p {
+    font-family: "Dancing Script", cursive;
+    font-size: 22px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Decorative border effect on hover */
+  .achievement::before, .achievement::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #ff9800;
+    transition: all 0.3s ease;
+  }
+  
+  .achievement::before {
+    top: 0;
+    left: 0;
+  }
+  
+  .achievement::after {
+    bottom: 0;
+    right: 0;
+  }
+  
+  .achievement:hover::before, .achievement:hover::after {
+    width: 100%;
+  }
+  
