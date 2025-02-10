@@ -78,7 +78,7 @@
   }
   
   .achievement-content p {
-    font-family: "Dancing Script", cursive;
+    font-family: "optima", sans-serif;
     font-size: 22px;
     color: #333;
     line-height: 1.6;
@@ -107,4 +107,3 @@
   .achievement:hover::before, .achievement:hover::after {
     width: 100%;
   }
-  

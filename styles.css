@@ -155,3 +155,22 @@ nav ul li a.active {
 .custom-link:hover {
   color: #003e88; /* Optional: hover color */
 }
+.more-icon-link {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.more-icon-link i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.more-icon-link:hover {
+  color: #0056b3;
+}
