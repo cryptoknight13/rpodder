@@ -1,76 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rakesh Podder - Researcher in Cybersecurity, AI & ML</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- Font Awesome CDN for social media icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Pirata+One&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">  
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Oleo+Script:wght@400;700&family=Pirata+One&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Chokokutai&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Oleo+Script:wght@400;700&family=Pirata+One&family=Poppins:wght@400;500;600&family=Rochester&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Chokokutai&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Oleo+Script:wght@400;700&family=Pirata+One&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:wght@400;500;600&family=Rochester&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rakesh Podder - Education</title>
+  <link rel="stylesheet" href="/rpodder/Style/ai-planning.css"/>
+  <script src="menu.js" defer></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
-<body>
-  <header>
-    <h1>Rakesh Podder</h1>
-    <p>Researcher in Cybersecurity, Firmware Security, AI, and Machine Learning. <a href="https://scholar.google.com/citations?user=LznkBwUAAAAJ&hl=en" target="_blank" class="custom-link">[Google Scholar]</a></p>
-  </header>
-  
-  <!-- Full-width navigation bar below header -->
-  <nav class="full-width-nav">
-    <ul class="tabs">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="education.html" >Education</a></li>
-      <li><a href="research.html" class="active">Research</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="events.html" >Events</a></li>
-      <li><a href="achievement.html">Achievements</a></li>
-      <li><a href="contact.html" >Contact</a></li>
-    </ul>
-  </nav>
 
-  <!-- Navigation Buttons -->
+<body>
+
+<!-- Top Menu Bar -->
+<div class="top-bar">
+  <div class="left-placeholder"></div>
+  <div class="right-menu">
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fa fa-bars"></i>
+    </div>
+    <nav class="full-width-nav" id="full-width-nav">
+      <ul class="tabs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html" >Education</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="events.html" >Events</a></li>
+        <li><a href="achievement.html">Achievements</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- Name Section -->
+<section class="name-section">
+  <h1 class="name-with-line">S-RFUP</h1>
+</section>
+ 
+  <!-- Navigation Buttons at the Bottom as well -->
   <nav class="research-nav">
     <a href="bios-firmware-security.html" class="btn">Previous</a>
     <a href="ai-planning.html" class="btn">Next</a>
   </nav>
+<!-- Research Section -->
+<section id="research">
+  <!-- Overview -->
+  <h3 class="research-section-title">Overview</h3>
+  <p>
+    We present a novel framework (S-RFUP) that integrates industry standard protocols (PLDM, MCTP) with a hardware root of trust (HRoT) to ensure interoperable and secure remote firmware update (RFU) across multiple device platforms.
+  </p>
 
-  <section>
-    <div class="research-detail">
-        <h2>S-RFUP: Secure Remote Firmware Update Protocol</h2>
-        <p>We present a novel framework (S-RFUP) that integrates industry standard protocols (PLDM, MCTP) with a hardware root of trust (HRoT) to ensure interoperable and secure RFU across multiple device platforms.</p>
-        
-        <!-- Image Gallery -->
-        <div class="research-gallery">
-            <img src="images/highlevel.png" alt="Secure Remote Firmware Update Protocol">
-            <img src="images/sequence.png" alt="Firmware update Process">
-            <img src="images/lib.png" alt="Desiged Libraries">
-            <img src="images/state.png" alt="States of S-RFUP">
-        </div>
-        <p>Traditional over-the-air (OTA) update mechanisms lack security features. As a result, OTA firmware updates expose a device to several threats including unauthorized update, introduction of malware in the firmware code and rollback of firmware to an vulnerable older version. A handful of domain specific OTA firmware update protocols, especially in the automotive sector, have started incorporating rudimentary security features; however, these are not always enough. Moreover, a lack of standardization can lead to compatibility issues. In this work, we introduce the Secure Remote Firmware Update Protocol (S-RFUP) for platform ( We use the term ``platform'' to mean any computer or hardware device and/or associated operating system, or a virtual environment on which software can be installed and run. Source NISTIR 7698, \url{https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir7698.pdf}) firmware updates that enhances security and operational integrity across firmware devices during the update procedure. We build upon the hardware root of trust functionality provided by the Project Cerberus to perform secure attestation. With a goal of providing uniformity across a multitude of platforms, we leverage industry standards such as Platform Level Data Model (PLDM), Management Component Transport Protocol (MCTP), and well established cryptographic algorithms. Incorporating PLDM and MCTP reduces the management complexity and ensure interoperability between different hardware and software components in platform. We provide a security analysis of the proposed S-RFUP framework and discuss its implementation, testing and validation results. </p>
-    </div>
-  </section>
+  <!-- Objectives -->
+  <h3 class="research-section-title">Research Objectives</h3>
+  <ul class="research-objectives">
+    <li>Design an end-to-end Secure Remote Firmware Update Protocol (S-RFUP).</li>
+    <li>Leverage Project Cerberus Hardware Root of Trust (HRoT) for secure attestation.</li>
+    <li>Integrate PLDM and MCTP standards for interoperability and scalability.</li>
+    <li>Provide formal security analysis and real-world validation of S-RFUP.</li>
+  </ul>
+
+  <!-- Methods -->
+  <h3 class="research-section-title">Methods</h3>
+  <p>
+    S-RFUP addresses major OTA firmware update security gaps by combining trusted hardware-based attestation with industry standard protocols. 
+    We build on HRoT functionality from Project Cerberus to perform cryptographic validation of firmware during update cycles.
+    To ensure broad platform support, we integrate Platform Level Data Model (PLDM) and Management Component Transport Protocol (MCTP) for uniform management of firmware updates.
+  </p>
+  <p>
+    The S-RFUP architecture enforces:
+    <ul>
+      <li>Stateful secure firmware update flow (lock/unlock/attestation/verification).</li>
+      <li>Secure key management across update processes.</li>
+      <li>Rollback prevention and version integrity.</li>
+      <li>Vendor-independent extensibility via standardized interfaces.</li>
+    </ul>
+  </p>
+
+  <!-- Image Gallery -->
+  <h3 class="research-section-title">Visualizations</h3>
+  <div class="research-gallery">
+    <img src="images/highlevel.png" alt="Secure Remote Firmware Update Protocol" />
+    <img src="images/sequence.png" alt="Firmware update Process" />
+    <img src="images/lib.png" alt="Designed Libraries" />
+    <img src="images/state.png" alt="States of S-RFUP" />
+  </div>
+
+  <!-- Impact -->
+  <h3 class="research-section-title">Impact</h3>
+  <p>
+    S-RFUP provides an interoperable, scalable, and hardware-trusted mechanism for securing remote firmware updates in heterogeneous platforms.
+    Its modular design allows integration in critical systems (server BIOS/BMC, IoT, automotive ECUs, network equipment) with minimal vendor lock-in.
+  </p>
+  <p>
+    Real-world validation of S-RFUP on trusted microcontroller platforms shows strong resistance to common OTA attacks such as unauthorized updates, rollback attacks, and firmware tampering.
+    This work represents a significant step forward in standardizing secure OTA firmware update practices in modern platforms.
+  </p>
+</section>
+  
 
   <!-- Navigation Buttons at the Bottom as well -->
   <nav class="research-nav">
     <a href="bios-firmware-security.html" class="btn">Previous</a>
     <a href="ai-planning.html" class="btn">Next</a>
   </nav>
-</section>
+
 <footer>
-    <p>&copy; 2024 Rakesh Podder</p>
+    <p>&copy; 2025 Rakesh Podder</p>
 </footer>
 </body>
 </html>

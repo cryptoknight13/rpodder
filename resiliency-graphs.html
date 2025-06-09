@@ -1,84 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rakesh Podder - Researcher in Cybersecurity, AI & ML</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- Font Awesome CDN for social media icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Pirata+One&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">  
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Oleo+Script:wght@400;700&family=Pirata+One&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Chokokutai&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Oleo+Script:wght@400;700&family=Pirata+One&family=Poppins:wght@400;500;600&family=Rochester&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Chokokutai&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Oleo+Script:wght@400;700&family=Pirata+One&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:wght@400;500;600&family=Rochester&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rakesh Podder - Education</title>
+  <link rel="stylesheet" href="/rpodder/Style/ai-planning.css"/>
+  <script src="menu.js" defer></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
-<body>
-  <header>
-    <h1>Rakesh Podder</h1>
-    <p>Researcher in Cybersecurity, Firmware Security, AI, and Machine Learning. <a href="https://scholar.google.com/citations?user=LznkBwUAAAAJ&hl=en" target="_blank" class="custom-link">[Google Scholar]</a></p>
-  </header>
-  
-  <!-- Full-width navigation bar below header -->
-  <nav class="full-width-nav">
-    <ul class="tabs">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="education.html" >Education</a></li>
-      <li><a href="research.html" class="active">Research</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="events.html" >Events</a></li>
-      <li><a href="achievement.html">Achievements</a></li>
-      <li><a href="contact.html" >Contact</a></li>
-    </ul>
-  </nav>
 
-  <!-- Navigation Buttons -->
+<body>
+
+<!-- Top Menu Bar -->
+<div class="top-bar">
+  <div class="left-placeholder"></div>
+  <div class="right-menu">
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fa fa-bars"></i>
+    </div>
+    <nav class="full-width-nav" id="full-width-nav">
+      <ul class="tabs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html" >Education</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="events.html" >Events</a></li>
+        <li><a href="achievement.html">Achievements</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- Name Section -->
+<section class="name-section">
+  <h1 class="name-with-line">Resiliency Graph (RG)</h1>
+</section>
+ 
+  <!-- Navigation Buttons at the Bottom as well -->
   <nav class="research-nav">
     <a href="formal-methods.html" class="btn">Previous</a>
-    <!-- <a href="machine-learning.html" class="btn">Next</a> -->
+    <a href="resiliency-graphs.html" class="btn">Next</a>
   </nav>
+  
+<!-- Research Section -->
+<section id="research">
+  <!-- Overview -->
+  <h3 class="research-section-title">Overview</h3>
+  <p>
+    We present a novel modeling paradigm, Resiliency Graph (RG), that combines the power of Natural Language Processing (NLP) and AI Planning (PDDL) to evaluate and analyze how a cyber-attack can trigger safety events in Cyber-Physical Systems (CPS).
+  </p>
 
-  <section>
-    <div class="research-detail">
-        <h2>Resiliency Graph (RG)</h2>
-        <p>We present a novel modeling paradigm, Resiliency Graph (RG) that combines the power of Natural Language Processing (NLP) and AI Planning (PDDL) to evaluate and analyze how a cyber-attack can trigger safety events in the CPS.</p>
-        
-        <!-- Image Gallery -->
-        <div class="research-gallery">
-            <img src="images/rg-graph.png" alt="Resiliency Graph">
-            <img src="images/flow.png" alt="Workflow">
-            <img src="images/cps.png" alt="Trusted Agent Network">
-        </div>
-        <p>Operation efficiency in cyber physical system (CPS) has been significantly improved by digitalization of industrial control systems (ICS). However, digitalization exposes ICS to cyber attacks. Of particular concern are cyber attacks that trigger ICS failure. To determine how cyber attacks can trigger failures and thereby improve the resiliency posture of CPS, this study presents the Resiliency Graph (RG) framework that integrates Attack Graphs (AG) and Fault Trees (FT). RG uses AI planning to establish associations between vulnerabilities and system failures thereby enabling operators to evaluate and manage system resiliency. Our deterministic approach represents both system failures and cyber attacks as a structured set of prerequisites and outcomes using a novel AI planning language. AI planning is then used to chain together the causes and the consequences.  Empirical evaluations on various ICS network configurations validate the framework's effectiveness in capturing how cyber attacks trigger failures and the framework's scalability.</p>
-    </div>
-  </section>
+  <!-- Objectives -->
+  <h3 class="research-section-title">Research Objectives</h3>
+  <ul class="research-objectives">
+    <li>Model the interplay between cyber-attacks and system-level failures in CPS.</li>
+    <li>Integrate Attack Graphs and Fault Trees into a unified Resiliency Graph (RG).</li>
+    <li>Leverage AI Planning to analyze resiliency posture and failure causality.</li>
+    <li>Provide actionable insights to ICS operators for enhancing system resiliency.</li>
+  </ul>
+
+  <!-- Methods -->
+  <h3 class="research-section-title">Methods</h3>
+  <p>
+    Our deterministic approach represents both system failures and cyber-attacks as a structured set of prerequisites and outcomes using a novel AI planning language. AI Planning chains together the causes and consequences across both domains.
+    RG uses AI Planning (via PDDL) to establish associations between vulnerabilities and system failures, enabling operators to evaluate and manage system resiliency in complex CPS/ICS environments.
+  </p>
+
+  <!-- Image Gallery -->
+  <h3 class="research-section-title">Visualizations</h3>
+  <div class="research-gallery">
+    <img src="images/rg-graph.png" alt="Resiliency Graph">
+    <img src="images/flow.png" alt="Workflow">
+    <img src="images/cps.png" alt="Cyber-Physical System">
+  </div>
+
+  <!-- Impact -->
+  <h3 class="research-section-title">Impact</h3>
+  <p>
+    Operation efficiency in CPS has been significantly improved by the digitalization of ICS. However, this exposes ICS to cyber attacks that can trigger critical system failures.
+    The RG framework allows ICS operators to identify how cyber attacks propagate into physical system faults, and how to mitigate these risks proactively.
+    Our empirical evaluations validate the framework's effectiveness and scalability on large ICS network configurations.
+    This work provides a new direction for integrating cybersecurity and safety analysis in industrial and critical systems.
+  </p>
+</section>
+  
 
   <!-- Navigation Buttons at the Bottom as well -->
   <nav class="research-nav">
     <a href="formal-methods.html" class="btn">Previous</a>
-    <!-- <a href="machine-learning.html" class="btn">Next</a> -->
+    <a href="resiliency-graphs.html" class="btn">Next</a>
   </nav>
-</section>
 
 <footer>
-    <p>&copy; 2024 Rakesh Podder</p>
+    <p>&copy; 2025 Rakesh Podder</p>
 </footer>
 </body>
 </html>
-
-
-
-
-
-
-
-

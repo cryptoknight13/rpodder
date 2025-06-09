@@ -90,7 +90,7 @@
 
 /* Name Section */
 .name-section {
-  max-width: 1000px; /* FINAL safe width */
+  max-width: 1500px; /* FINAL safe width */
   margin: 40px auto;
   padding: 20px 40px;
   background-color: rgba(255, 255, 255, 0.95); /* Light background */
@@ -118,7 +118,7 @@
   content: "";
   position: absolute;
   top: 50%;
-  width: 150px; /* line length — you can adjust */
+  width: 200px; /* line length — you can adjust */
   height: 2px;
   background-color: #555555;
 }
@@ -135,16 +135,21 @@
 
 /* Name description */
 .name-section .name-description {
-  font-family: Arial, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 18px;
   color: #555555;
   line-height: 1.6;
   margin-top: 15px;
 }
 
-/* Education Section */
-#education {
-  max-width: 1000px;
+
+/* TWO COLUMN SECTION */
+.two-column-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1500px;
   margin: 40px auto;
   padding: 30px 40px;
   background-color: rgba(255, 255, 255, 0.95); /* Light background */
@@ -153,21 +158,108 @@
   backdrop-filter: blur(8px);
 }
 
-#education h2 {
-  font-size: 36px;
+/* LEFT COLUMN */
+.left-column {
+  flex: 1;
+  min-width: 280px;
   text-align: center;
-  margin-bottom: 25px;
+  padding: 10px;
+}
+
+.profile-picture-column {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #555;
+}
+
+.bio-text {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+  padding: 0 10px;
+}
+
+/* RIGHT COLUMN */
+.right-column {
+  flex: 2;
+  min-width: 350px;
+  padding: 10px;
+}
+
+/* Achievements */
+.achievements-container {
+  margin-bottom: 30px;
+}
+
+.achievements-container h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.achievement {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.achievement-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+  border: 2px solid #999;
+}
+
+.achievement-content h3 {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.achievement-content p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.more-icon-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.more-icon-link i {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.more-icon-link:hover {
+  color: #0056b3;
+}
+
+/* Job Experiences (Timeline) */
+#experience h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
 }
 
 .timeline {
   border-left: 3px solid #555;
-  padding-left: 20px;
+  padding-left: 18px;
 }
 
 .timeline-item {
-  margin-bottom: 30px;
+  margin-bottom: 18px;
   position: relative;
-  padding-bottom: 20px;
 }
 
 .timeline-icon {
@@ -176,48 +268,50 @@
   top: 0;
   background-color: #555;
   color: white;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-}
-
-.timeline-icon img {
-  width: 20px;
-  height: 20px;
+  font-size: 12px;
 }
 
 .timeline-content h3 {
-  font-size: 24px;
+  font-size: 25px;
   margin-bottom: 5px;
+}
+
+.timeline-content h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #666;
 }
 
 .timeline-content p {
   font-size: 18px;
   color: #555;
-  line-height: 1.5;
-}
-
-.timeline-date {
-  font-size: 14px;
-  color: #888;
-  margin-bottom: 10px;
-  display: block;
-}
-
-.school-logo {
-  display: block;
-  max-width: 100px;
-  margin: 10px 0;
+  line-height: 1.4;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  #education {
+  .two-column-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     padding: 20px;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .profile-picture-column {
+    width: 120px;
+    height: 120px;
   }
 
   .timeline {
@@ -230,97 +324,10 @@
   }
 }
 
-/* Degree Thesis with Expand/Collapse */
-.degree-thesis {
-  margin-top: 15px;
-  padding: 15px;
-  background-color: rgba(240, 240, 240, 0.8);
-  border-left: 4px solid #007bff;
-  border-radius: 6px;
-  text-align: left;
-  position: relative;
-}
-
-.degree-thesis h4 {
-  font-size: 18px;
-  margin-bottom: 8px;
-  color: #222;
-}
-
-.degree-thesis p {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.5;
-}
-
-/* Toggle */
-.thesis-toggle {
-  display: none;
-}
-
-.thesis-toggle-label {
-  display: inline-block;
-  margin-top: 8px;
-  font-size: 15px;
-  font-weight: 600;
-  color: #007bff;
-  cursor: pointer;
-  user-select: none;
-}
-
-.thesis-toggle:checked + .thesis-toggle-label::after {
-  content: " (Less)";
-}
-
-.thesis-toggle:not(:checked) + .thesis-toggle-label::after {
-  content: " (More)";
-}
-
-/* Full text hidden by default */
-.thesis-toggle ~ .thesis-full-text {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: max-height 0.4s ease, opacity 0.4s ease;
-}
-
-/* Show full text when checkbox checked */
-.thesis-toggle:checked ~ .thesis-full-text {
-  max-height: 1000px; /* large enough */
-  opacity: 1;
-  margin-top: 10px;
-}
-
-.thesis-full-text p {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.5;
-}
-
-.thesis-full-text .thesis-link {
-  display: inline-block;
-  margin-top: 8px;
-  font-size: 15px;
-  font-weight: 600;
-  color: #007bff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.thesis-full-text .thesis-link i {
-  margin-right: 6px;
-  font-size: 16px;
-}
-
-.thesis-full-text .thesis-link:hover {
-  color: #0056b3;
-}
-
-
 
 /* Social Media Section */
 #social-media {
-  max-width: 1000px;
+  max-width: 1500px;
   margin: 40px auto;
   padding: 20px 30px;
   background-color: rgba(255, 255, 255, 0.95); /* Light background */
@@ -332,7 +339,7 @@
 
 #social-media h3 {
   font-family: 'Georgia', serif;
-  font-size: 22px;
+  font-size: 24px;
   margin-bottom: 15px;
   color: #222;
 }
@@ -345,6 +352,26 @@
   flex-wrap: wrap;
   margin-top: 10px;
 }
+/* Social Icons - platform colors on hover */
+.social-icons a.fa-linkedin:hover {
+  color: #0077b5; /* LinkedIn Blue */
+}
+
+.social-icons a.fa-github:hover {
+  color: #333333; /* GitHub Black */
+}
+
+.social-icons a.fa-instagram:hover {
+  color: #e1306c; /* Instagram Pink */
+}
+
+.social-icons a.fa-facebook:hover {
+  color: #3b5998; /* Facebook Blue */
+}
+
+.social-icons a.fa-youtube:hover {
+  color: #ff0000; /* YouTube Red */
+}
 
 .social-icons a {
   font-size: 28px;
@@ -354,28 +381,10 @@
 }
 
 .social-icons a:hover {
+  color: #0056b3;
   transform: scale(1.2);
 }
 
-.social-icons a.fa-linkedin:hover {
-  color: #0077b5;
-}
-
-.social-icons a.fa-github:hover {
-  color: #333333;
-}
-
-.social-icons a.fa-instagram:hover {
-  color: #e1306c;
-}
-
-.social-icons a.fa-facebook:hover {
-  color: #3b5998;
-}
-
-.social-icons a.fa-youtube:hover {
-  color: #ff0000;
-}
 
 /* Footer */
 footer {

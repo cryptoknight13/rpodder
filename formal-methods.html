@@ -1,84 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rakesh Podder - Researcher in Cybersecurity, AI & ML</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- Font Awesome CDN for social media icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Pirata+One&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">  
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Oleo+Script:wght@400;700&family=Pirata+One&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Chokokutai&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Oleo+Script:wght@400;700&family=Pirata+One&family=Poppins:wght@400;500;600&family=Rochester&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Chokokutai&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Oleo+Script:wght@400;700&family=Pirata+One&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:wght@400;500;600&family=Rochester&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rakesh Podder - Education</title>
+  <link rel="stylesheet" href="/rpodder/Style/ml.css"/>
+  <script src="menu.js" defer></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
-<body>
-  <header>
-    <h1>Rakesh Podder</h1>
-    <p>Researcher in Cybersecurity, Firmware Security, AI, and Machine Learning. <a href="https://scholar.google.com/citations?user=LznkBwUAAAAJ&hl=en" target="_blank" class="custom-link">[Google Scholar]</a></p>
-  </header>
-  
-  <!-- Full-width navigation bar below header -->
-  <nav class="full-width-nav">
-    <ul class="tabs">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="education.html" >Education</a></li>
-      <li><a href="research.html" class="active">Research</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="events.html" >Events</a></li>
-      <li><a href="achievement.html">Achievements</a></li>
-      <li><a href="contact.html" >Contact</a></li>
-    </ul>
-  </nav>
 
-  <!-- Navigation Buttons -->
+<body>
+
+<!-- Top Menu Bar -->
+<div class="top-bar">
+  <div class="left-placeholder"></div>
+  <div class="right-menu">
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fa fa-bars"></i>
+    </div>
+    <nav class="full-width-nav" id="full-width-nav">
+      <ul class="tabs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html" >Education</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="events.html" >Events</a></li>
+        <li><a href="achievement.html">Achievements</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- Name Section -->
+<section class="name-section">
+  <h1 class="name-with-line">Formal Methods for Secure Protocols</h1>
+</section>
+ 
+  <!-- Navigation Buttons at the Bottom as well -->
   <nav class="research-nav">
     <a href="machine-learning.html" class="btn">Previous</a>
     <a href="resiliency-graphs.html" class="btn">Next</a>
   </nav>
 
-  <section>
-    <div class="research-detail">
-        <h2>Formal Method</h2>
-        <p>Enhancing the Protection in Transit (PIT) protocol—which locks devices during transit to prevent unauthorized firmware tampering—we formally verify its correctness and security using Coloured Petri Nets and the STRIDE threat modeling framework, and implement robust cryptographic techniques tested on a trusted microcontroller to ensure only authorized users can initiate the boot process.</p>
+<!-- Research Section -->
+<section id="research">
 
-        <p>The correctness ( formal verification) of the PIT security protocol is verified using Coloured-Petri Nets (CPN). We use a threat modeling framework, STRIDE to demonstrate various cyber-attacks through the CPN.</p>
-        
-        <!-- Image Gallery -->
-        <div class="research-gallery">
-            <img src="images/method.png" alt="method">
-            <img src="images/model.png" alt="Locking in CPN">
-            <img src="images/model2.png" alt="Unlocking in CPN">
-            <img src="images/threats.png" alt="CPN Attacks">
-        </div>
-        <p>Firmware like the Basic Input Output System (BIOS) is essential for a computing device's operation, as it facilitates communication between the hardware and the operating system. However, firmware is vulnerable to unauthorized and malicious modifications, which are particularly serious because they allow attackers to gain full control over the entire computing system, effectively bypassing all security measures of the operating system and higher layers. Although there are industry protocols to secure the boot process, firmware remains easy to tamper with once the device is running. This issue is especially critical when devices are transported, as they can be intercepted and booted by malicious actors. To mitigate this threat, we have developed the Protection in Transit (PIT) protocol, which locks the device during transit and ensures that only authorized users can boot it up. Given the crucial role of the PIT protocol in device security, it is imperative to provide formal guarantees of its correctness and security. This paper enhances the PIT protocol in two significant ways. First, we validate its correctness using Coloured Petri Nets (CPN) and demonstrate its robustness against potential cyberattacks through Microsoft's STRIDE threat modeling framework. We then incorporate the findings from the STRIDE analysis into the CPN model to assess the PIT protocol's security, thereby increasing confidence in its ability to protect devices during transit. Second, we delve into the core functionalities of the PIT protocol by developing implementation libraries that utilize robust cryptographic techniques. These techniques have been rigorously tested on a trusted microcontroller.</p>
-    </div>
-  </section>
+  <!-- Overview -->
+  <h3 class="research-section-title">Overview</h3>
+  <p>
+    Enhancing the Protection in Transit (PIT) protocol—which locks devices during transit to prevent unauthorized firmware tampering—we formally verify its correctness and security using Coloured Petri Nets and the STRIDE threat modeling framework.
+    We implement robust cryptographic techniques on a trusted microcontroller to ensure only authorized users can initiate the boot process.
+  </p>
+
+  <!-- Objectives -->
+  <h3 class="research-section-title">Research Objectives</h3>
+  <ul class="research-objectives">
+    <li>Formally verify correctness of the PIT protocol using Coloured Petri Nets (CPN).</li>
+    <li>Analyze security robustness against cyber threats using Microsoft's STRIDE model.</li>
+    <li>Integrate cryptographic techniques into trusted microcontrollers for secure deployment.</li>
+    <li>Demonstrate protocol’s resilience against firmware attacks during transit.</li>
+  </ul>
+
+  <!-- Methods -->
+  <h3 class="research-section-title">Methods</h3>
+  <p>
+    The correctness of the PIT security protocol is verified using Coloured-Petri Nets (CPN).
+    We use STRIDE threat modeling to demonstrate potential attacks on firmware. The CPN model is further enhanced based on STRIDE insights to verify robustness.
+    We also implement PIT functionality using strong cryptographic libraries on trusted microcontrollers to ensure end-to-end secure operation.
+  </p>
+
+  <!-- Image Gallery -->
+  <h3 class="research-section-title">Results & Visualizations</h3>
+  <div class="research-gallery">
+    <img src="images/method.png" alt="Method Diagram">
+    <img src="images/model.png" alt="Locking Model - CPN">
+    <img src="images/model2.png" alt="Unlocking Model - CPN">
+    <img src="images/threats.png" alt="Threats CPN Diagram">
+  </div>
+
+  <!-- Impact -->
+  <h3 class="research-section-title">Impact</h3>
+  <p>
+    Firmware such as BIOS is a crucial component of device security but remains vulnerable to tampering.
+    The PIT protocol provides a trusted mechanism for securing devices in transit and preventing unauthorized firmware execution.
+    Our formal verification work ensures strong guarantees about PIT’s correctness and resilience. In addition, the implementation of cryptographic protections on trusted microcontrollers provides a practical path to wide-scale adoption of PIT in secure supply chains.
+  </p>
+
+</section>
+  
 
   <!-- Navigation Buttons at the Bottom as well -->
   <nav class="research-nav">
     <a href="machine-learning.html" class="btn">Previous</a>
     <a href="resiliency-graphs.html" class="btn">Next</a>
   </nav>
-  <footer>
-    <p>&copy; 2024 Rakesh Podder</p>
+
+<footer>
+    <p>&copy; 2025 Rakesh Podder</p>
 </footer>
 </body>
 </html>
-
-
-
-
-
-
-
